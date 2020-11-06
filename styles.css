@@ -1,0 +1,333 @@
+@font-face {
+    font-family: Spartan;
+    src: url(./static/Spartan-Medium.ttf);
+}
+@font-face {
+    font-family: Spartan-Bold;
+    src: url(./static/Spartan-Bold.ttf);
+}
+@font-face {
+    font-family: Spartan-Light;
+    src: url(./static/Spartan-Regular.ttf);
+}
+@media (max-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+    .tlo {
+        background: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+
+    }
+
+    #main {
+        font-family: Spartan;
+        color: hsl(300, 43%, 22%);
+        padding-top: 22%;
+        padding-bottom: 10%;
+    }
+
+    #main h1 {
+        font-family: Spartan-Bold;
+        text-align: center;
+        font-size: 220%;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        padding-bottom: 3%;
+    }
+
+    #main p {
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 3%;
+        font-size: 0.95em;
+        line-height: 1.65;
+        opacity: 0.95;
+        color: hsl(303, 10%, 53%);
+    }
+
+    #ratings {
+        font-family: Spartan-Bold;
+        text-align: center;
+        font-weight: 700;
+        height: 40vh;
+        color: hsl(300, 43%, 22%);
+    }
+
+    .rating {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        border-radius: 10px;
+        padding: 3.5% 2.5%;
+        background-color: hsl(300, 24%, 96%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating p {
+        padding-top: 3%;
+    }
+
+    #opinions {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-family: Spartan;
+        font-weight: lighter;
+        margin-bottom: 20%;
+
+    }
+
+    .opinion {
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        padding: 2%;
+        margin: 2% 5%;
+    }
+
+
+    .opinion img {
+        border-radius: 50%;
+        height: 70%;
+    }
+
+    .header {
+        padding-top: 8%;
+        padding-bottom: 17%;
+        padding-left: 5%;
+    }
+
+    .name {
+        font-family: Spartan-Bold;
+    }
+
+    .verified {
+        font-family: Spartan-Light;
+        color: hsl(333, 80%, 67%);
+        opacity: 0.8;
+    }
+
+    .header img {
+        height: 3rem;
+        float: left;
+
+    }
+
+    .sign {
+        float: left;
+        padding-left: 8%;
+        padding-top: 2%;
+    }
+
+    .text {
+        clear: both;
+
+        font-family: Spartan-Light;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: hsl(0, 0%, 100%);
+        font-size: 0.85rem;
+        line-height: 1.7;
+        padding-top: 5%;
+        padding-bottom: 8%;
+
+    }
+}
+@media (min-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .tlo {
+        background: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .inside {
+        padding: 6.8% 10%;
+        height: 75vh;
+    }
+
+    #main {
+        font-family: Spartan;
+        max-width: 38%;
+        color: hsl(300, 43%, 22%);
+        float: left;
+    }
+
+    #main h1 {
+        font-family: Spartan-Bold;
+        font-size: 330%;
+        line-height: 1.1;
+        letter-spacing: -1px;
+    }
+
+    #main p {
+        margin-top: 3%;
+        font-size: 1.05em;
+        line-height: 1.7;
+        opacity: 0.95;
+        color: hsl(303, 10%, 53%);
+    }
+
+
+    #ratings {
+        font-family: Spartan-Bold;
+        float: right;
+        width: 38vw;
+        font-weight: 700;
+
+        margin-left: 20px;
+        height: 40vh;
+        color: hsl(300, 43%, 22%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating {
+        width: 78%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        border-radius: 10px;
+        padding: 3.5% 2.5%;
+        background-color: hsl(300, 24%, 96%);
+        display: flex;
+    }
+
+    .left {
+        align-self: flex-start;
+    }
+
+    .center {
+        align-self: center;
+    }
+
+    .right {
+        align-self: flex-end;
+    }
+
+    .rating p {
+        padding-left: 3%;
+    }
+
+    .stars {
+        width: 30%;
+        padding-left: 5%;
+        display: inline-block;
+    }
+
+    .star {
+        height: 90%;
+        padding-left: 0.8%;
+        padding-right: 0.5%;
+        margin: 0;
+    }
+
+
+    #opinions {
+        clear: both;
+        display: flex;
+        color: white;
+        font-family: Spartan;
+        font-weight: lighter;
+        height: 40vh;
+
+    }
+
+    .opinion {
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        padding: 2%;
+
+    }
+
+    .mar {
+        margin-left: 3%;
+    }
+
+    .opinion img {
+        border-radius: 50%;
+        height: 70%;
+    }
+
+    .header {
+        padding-top: 8%;
+        padding-bottom: 17%;
+        padding-left: 5%;
+    }
+
+    .name {
+        font-family: Spartan-Bold;
+    }
+
+    .verified {
+        font-family: Spartan-Light;
+        color: hsl(333, 80%, 67%);
+        opacity: 0.8;
+    }
+
+    .header img {
+        height: 3rem;
+        float: left;
+
+    }
+
+    .sign {
+        float: left;
+        padding-left: 8%;
+        padding-top: 2%;
+    }
+
+    .text {
+        clear: both;
+
+        font-family: Spartan-Light;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: hsl(0, 0%, 100%);
+        font-size: 0.9rem;
+        line-height: 1.7;
+        padding-top: 5%;
+        padding-bottom: 8%;
+
+    }
+
+
+}
+/*
+10,000+ of our users love our products.
+
+    We only provide great products combined with excellent customer service.
+    See what our satisfied customers are saying about our services.
+
+    Rated 5 Stars in Reviews
+    Rated 5 Stars in Report Guru
+    Rated 5 Stars in BestTech
+
+    Colton Smith
+    Verified Buyer
+    "We needed the same printed design as the one we had ordered a week prior.
+    Not only did they find the original order, but we also received it in time.
+    Excellent!"
+
+    Irene Roberts
+    Verified Buyer
+    "Customer service is always excellent and very quick turn around. Completely
+    delighted with the simplicity of the purchase and the speed of delivery."
+
+    Anne Wallace
+    Verified Buyer
+    "Put an order with this company and can only praise them for the very high
+    standard. Will definitely use them again and recommend them to everyone!"
+ */
